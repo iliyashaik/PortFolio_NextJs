@@ -2,11 +2,13 @@
 
 import { FormEvent, useRef, useState } from "react";
 
+const WEB3FORMS_KEY = "be1558f7-9cc7-4970-983e-ef49c45ba6dd"; // Replace with your Web3Forms access key
+
 const ContactForm = () => {
   const formRef = useRef<HTMLFormElement>(null);
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = formRef.current;
     if (!form) return;
@@ -26,11 +28,35 @@ const ContactForm = () => {
       return;
     }
 
-    setSent(true);
-    setTimeout(() => {
-      setSent(false);
-      form.reset();
-    }, 2000);
+    setStatus("sending");
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          name,
+          email,
+          message,
+          subject: `Portfolio Contact: ${name}`,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setStatus("sent");
+        form.reset();
+        setTimeout(() => setStatus("idle"), 3000);
+      } else {
+        setStatus("error");
+        setTimeout(() => setStatus("idle"), 3000);
+      }
+    } catch {
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 3000);
+    }
   };
 
   return (
@@ -47,8 +73,8 @@ const ContactForm = () => {
         <label htmlFor="message">Message</label>
         <textarea id="message" name="message" rows={5} placeholder="Your message..." required></textarea>
       </div>
-      <button type="submit" className="btn btn--primary btn--full" disabled={sent} style={sent ? { opacity: 0.7 } : undefined}>
-        {sent ? "Sent!" : (
+      <button type="submit" className="btn btn--primary btn--full" disabled={status === "sending" || status === "sent"} style={status !== "idle" ? { opacity: 0.7 } : undefined}>
+        {status === "sending" ? "Sending..." : status === "sent" ? "Sent!" : status === "error" ? "Failed — try again" : (
           <>
             Send Message
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
