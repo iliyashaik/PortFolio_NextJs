@@ -14,6 +14,19 @@
     "viewWork": "Se mitt arbete",
     "getInTouch": "Kontakta mig"
   },
+  "about": {
+    "title": "Lär känna mig",
+    "subtitle": "Lite om min bakgrund och erfarenhet",
+    "paragraph1": "Jag är en Full-Stack-utvecklare med över 7 års erfarenhet av att leverera skalbara, produktionsfärdiga webbapplikationer i JavaScript och TypeScript ekosystemen. Min expertis omfattar React, Angular, Next.js, Node.js och Express med stark fokus på prestanda, skalbarhet och ren arkitektur.",
+    "paragraph2": "Jag har ett växande fokus på AI-drivna applikationsutveckling, integrerar intelligenta funktioner som automatisering, dataanalys och smarta användarinteraktioner med moderna AI-API:er och molntjänster. Jag är särskilt intresserad av att bygga system som kombinerar traditionell webbteknik med AI-kapabiliteter för att skapa mer adaptiva och effektiva användarupplevelser.",
+    "paragraph3": "Jag har stark erfarenhet av GCP, SQL/NoSQL-databaser och analysintegration, vilket gör att jag kan designa datadrivna system från slut till slut. Jag säkerställer hög leveranskvalitet genom Cypress-baserad testautomatisering, proaktiv övervakning med Sentry och CI/CD-pipelines med GitHub Actions.",
+    "paragraph4": "Jag tar ansvar för frontend-arkitektur, från att skapa pixelperfekta gränssnitt till att aktivt bidra till produktbeslut och samarbeta nära tvärfunktionella team för att anpassa tekniska lösningar med affärsmål.",
+    "stats": {
+      "yearsExperience": "Års erfarenhet",
+      "projectsDelivered": "Projekt levererade",
+      "technologies": "Tekniker"
+    }
+  },
   "skills": {
     "title": "Teknikstack",
     "subtitle": "Teknologier jag arbetar med",
