@@ -41,7 +41,7 @@ const projects = [
   },
 ];
 
-export default function ProjectsPage() {
+const ProjectsPage = () => {
   return (
     <ScrollReveal>
       <section className="section section--alt page-section" id="projects">
@@ -71,3 +71,5 @@ export default function ProjectsPage() {
     </ScrollReveal>
   );
 }
+
+export default ProjectsPage;

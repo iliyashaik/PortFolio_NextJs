@@ -38,7 +38,7 @@ const experiences = [
   },
 ];
 
-export default function ExperiencePage() {
+const ExperiencePage = () => {
   return (
     <ScrollReveal>
       <section className="section page-section" id="experience">
@@ -72,3 +72,5 @@ export default function ExperiencePage() {
     </ScrollReveal>
   );
 }
+
+export default ExperiencePage;

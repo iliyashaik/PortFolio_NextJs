@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Get in touch with Iliyaz Ahmed — Full-Stack Developer.",
 };
 
-export default function ContactPage() {
+const ContactPage = () => {
   return (
     <ScrollReveal>
       <section className="section page-section" id="contact">
@@ -46,3 +46,5 @@ export default function ContactPage() {
     </ScrollReveal>
   );
 }
+
+export default ContactPage;
