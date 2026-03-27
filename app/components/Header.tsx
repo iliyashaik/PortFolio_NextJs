@@ -3,13 +3,16 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTranslation } from "react-i18next";
 import { siteConfig } from "../config";
+import LanguageSwitcher from "./LanguageSwitcher";
 import "./header.css";
 
-export default function Header() {
+const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -36,10 +39,13 @@ export default function Header() {
                 className={`nav__link ${pathname === link.href ? "active" : ""}`}
                 onClick={() => setMenuOpen(false)}
               >
-                {link.text}
+                {t(`nav.${link.key}`)}
               </Link>
             </li>
           ))}
+          <li>
+            <LanguageSwitcher />
+          </li>
           <li>
             <ThemeToggle />
           </li>
@@ -78,3 +84,5 @@ function ThemeToggle() {
     </button>
   );
 }
+
+export default Header;

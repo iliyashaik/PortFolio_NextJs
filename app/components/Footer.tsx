@@ -3,7 +3,7 @@ import { siteConfig } from "../config";
 import { SocialIcon } from "./Icons";
 import "./footer.css";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer className="footer">
       <div className="container footer__inner">
@@ -20,3 +20,4 @@ export default function Footer() {
     </footer>
   );
 }
+export default Footer;

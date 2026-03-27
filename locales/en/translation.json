@@ -1,0 +1,58 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Iliyaz Ahmed",
+    "titlePrefix": "I build",
+    "description": "Full-Stack Developer specializing in modern JavaScript ecosystems, cloud-native architecture on GCP, and AI-driven solutions that deliver real business impact.",
+    "viewWork": "View My Work",
+    "getInTouch": "Get In Touch"
+  },
+  "skills": {
+    "title": "Tech Stack",
+    "subtitle": "Technologies I work with",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "cloud": "Cloud & Analytics",
+      "testing": "Testing & Tools",
+      "concepts": "Concepts"
+    },
+    "technologies": {
+      "react": "React",
+      "angular": "Angular",
+      "nextjs": "Next.js",
+      "typescript": "TypeScript",
+      "javascript": "JavaScript",
+      "primeng": "PrimeNG",
+      "nodejs": "Node.js",
+      "express": "Express.js",
+      "sql": "SQL",
+      "mongodb": "MongoDB",
+      "redis": "Redis",
+      "gcp": "GCP",
+      "analytics": "Google Analytics",
+      "ai": "AI Solutions",
+      "recaptcha": "Google reCAPTCHA",
+      "cypress": "Cypress",
+      "jest": "Jest",
+      "karma": "Karma",
+      "sentry": "Sentry",
+      "git": "Git",
+      "cicd": "CI/CD",
+      "ajax": "AJAX",
+      "json": "JSON",
+      "i18n": "i18n"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Iliyaz Ahmed. All rights reserved.",
+    "builtWith": "Built with Next.js & TypeScript"
+  }
+}

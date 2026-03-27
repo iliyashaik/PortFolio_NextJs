@@ -1,0 +1,58 @@
+{
+  "nav": {
+    "about": "Om mig",
+    "skills": "Kompetenser",
+    "experience": "Erfarenhet",
+    "projects": "Projekt",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hej, jag är",
+    "name": "Iliyaz Ahmed",
+    "titlePrefix": "Jag bygger",
+    "description": "Full-Stack-utvecklare specialiserad på moderna JavaScript-ekosystem, molnbaserad arkitektur på GCP och AI-drivna lösningar som ger verklig affärsnytta.",
+    "viewWork": "Se mitt arbete",
+    "getInTouch": "Kontakta mig"
+  },
+  "skills": {
+    "title": "Teknikstack",
+    "subtitle": "Teknologier jag arbetar med",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "cloud": "Moln & Analys",
+      "testing": "Testning & Verktyg",
+      "concepts": "Koncept"
+    },
+    "technologies": {
+      "react": "React",
+      "angular": "Angular",
+      "nextjs": "Next.js",
+      "typescript": "TypeScript",
+      "javascript": "JavaScript",
+      "primeng": "PrimeNG",
+      "nodejs": "Node.js",
+      "express": "Express.js",
+      "sql": "SQL",
+      "mongodb": "MongoDB",
+      "redis": "Redis",
+      "gcp": "GCP",
+      "analytics": "Google Analytics",
+      "ai": "AI-lösningar",
+      "recaptcha": "Google reCAPTCHA",
+      "cypress": "Cypress",
+      "jest": "Jest",
+      "karma": "Karma",
+      "sentry": "Sentry",
+      "git": "Git",
+      "cicd": "CI/CD",
+      "ajax": "AJAX",
+      "json": "JSON",
+      "i18n": "i18n"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Iliyaz Ahmed. Alla rättigheter förbehållna.",
+    "builtWith": "Byggt med Next.js & TypeScript"
+  }
+}

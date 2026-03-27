@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-export default function ScrollReveal({ children }: { children: React.ReactNode }) {
+const ScrollReveal = ({ children }: { children: React.ReactNode }) => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -33,3 +33,4 @@ export default function ScrollReveal({ children }: { children: React.ReactNode }
 
   return <div ref={ref}>{children}</div>;
 }
+export default ScrollReveal;

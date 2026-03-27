@@ -1,11 +1,14 @@
+'use client';
+
 import Link from "next/link";
+import { useTranslation } from 'react-i18next';
 import TypingEffect from "./components/TypingEffect";
 import { GitHubIcon, LinkedInIcon } from "./components/Icons";
 import "./home.css";
 
 type Token = { type: string; text: string } | string;
 
-const codeLines: Token[][] = [
+const codeLines = [
   [{ type: "keyword", text: "interface" }, " ", { type: "type", text: "Developer" }, " {"],
   ["  ", { type: "prop", text: "name" }, ": ", { type: "string", text: "string" }, ";"],
   ["  ", { type: "prop", text: "role" }, ": ", { type: "string", text: "string" }, ";"],
@@ -26,28 +29,28 @@ const codeLines: Token[][] = [
   ["};"],
 ];
 
- const Home= () => {
+const Home = () => {
+  const { t } = useTranslation();
+
   return (
-      <section className="hero" id="hero">
-        <div className="hero__container container">
-          <div className="hero__content">
-            <p className="hero__greeting">Hello, I&apos;m</p>
-            <h1 className="hero__name">Iliyaz Ahmed</h1>
-            <div className="hero__title-wrapper">
-              <span className="hero__title-prefix">I build</span>
-              <TypingEffect />
-              <span className="hero__cursor">|</span>
-            </div>
-            <p className="hero__description">
-              Full-Stack Developer specializing in modern JavaScript ecosystems,
-              cloud-native architecture on GCP, and AI-driven solutions that
-              deliver real business impact.
-            </p>
-            <div className="hero__actions">
-              <Link href="/projects" className="btn btn--primary">View My Work</Link>
-              <Link href="/contact" className="btn btn--outline">Get In Touch</Link>
-            </div>
-            <div className="hero__socials">
+    <section className="hero" id="hero">
+      <div className="hero__container container">
+        <div className="hero__content">
+          <p className="hero__greeting">{t('hero.greeting')}</p>
+          <h1 className="hero__name">{t('hero.name')}</h1>
+          <div className="hero__title-wrapper">
+            <span className="hero__title-prefix">{t('hero.titlePrefix')}</span>
+            <TypingEffect />
+            <span className="hero__cursor">|</span>
+          </div>
+          <p className="hero__description">
+            {t('hero.description')}
+          </p>
+          <div className="hero__actions">
+            <Link href="/projects" className="btn btn--primary">{t('hero.viewWork')}</Link>
+            <Link href="/contact" className="btn btn--outline">{t('hero.getInTouch')}</Link>
+          </div>
+          <div className="hero__socials">
               <a href="https://github.com/iliyashaik?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="social-link">
                 <GitHubIcon size={22} />
               </a>

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-export default function TypingEffect() {
+const TypingEffect = () => {
   const phrases = [
     "scalable web apps.",
     "AI-driven solutions.",
@@ -49,3 +49,4 @@ export default function TypingEffect() {
 
   return <span className="hero__title-typed">{text}</span>;
 }
+export default TypingEffect;

@@ -229,7 +229,7 @@
   }
 }
 
-/* ===== HERO RESPONSIVE ===== */
+/* Media Queries for smaller screens */
 @media (max-width: 900px) {
   .hero__container {
     grid-template-columns: 1fr;

@@ -1,10 +1,10 @@
 export const siteConfig = {
   navLinks: [
-    { href: "/about", text: "About" },
-    { href: "/skills", text: "Skills" },
-    { href: "/experience", text: "Experience" },
-    { href: "/projects", text: "Projects" },
-    { href: "/contact", text: "Contact" },
+    { href: "/about", key: "about" },
+    { href: "/skills", key: "skills" },
+    { href: "/experience", key: "experience" },
+    { href: "/projects", key: "projects" },
+    { href: "/contact", key: "contact" },
   ],
   socials: [
     {
@@ -20,3 +20,4 @@ export const siteConfig = {
   ],
   copyright: `© ${new Date().getFullYear()} Iliyaz Ahmed. All rights reserved.`,
 };
+
