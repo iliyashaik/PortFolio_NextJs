@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import CounterAnimation from "../components/CounterAnimation";
 import ScrollReveal from "../components/ScrollReveal";
 
@@ -15,10 +15,10 @@ const AboutContent = () => {
           <p className="section__subtitle">{t("about.subtitle")}</p>
           <div className="about__grid">
             <div className="about__text">
-              <p>{t("about.paragraph1")}</p>
-              <p>{t("about.paragraph2")}</p>
-              <p>{t("about.paragraph3")}</p>
-              <p>{t("about.paragraph4")}</p>
+              <p><Trans i18nKey="about.paragraph1" components={{ strong: <strong /> }} /></p>
+              <p><Trans i18nKey="about.paragraph2" components={{ strong: <strong /> }} /></p>
+              <p><Trans i18nKey="about.paragraph3" components={{ strong: <strong /> }} /></p>
+              <p><Trans i18nKey="about.paragraph4" components={{ strong: <strong /> }} /></p>
             </div>
             <div className="about__stats">
               <div className="stat-card">

@@ -9,7 +9,7 @@ const languageOptions = [
   { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
 ];
 
-export default function LanguageSwitcher() {
+const LanguageSwitcher = ({ compact }: { compact?: boolean }) => {
   const { i18n } = useTranslation();
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -21,7 +21,6 @@ export default function LanguageSwitcher() {
     }
     await i18n.changeLanguage(locale);
     setOpen(false);
-    window.location.href = window.location.pathname + window.location.search + window.location.hash;
   };
 
   useEffect(() => {
@@ -38,27 +37,31 @@ export default function LanguageSwitcher() {
   const current = languageOptions.find((option) => option.code === i18n.language) || languageOptions[0];
 
   return (
-    <div className="language-dropdown-wrapper" ref={containerRef}>
+    <div className={`language-dropdown-wrapper ${compact ? 'language-dropdown--compact' : ''}`} ref={containerRef}>
       <button
         className="language-dropdown-button"
         onClick={() => setOpen((state) => !state)}
         aria-label="Open language selector"
         type="button"
       >
-        {current.flag} {current.label}
-        <span className="language-dropdown-icon">▾</span>
+        {compact ? (
+          <span className="language-code">{current.code.toUpperCase()}</span>
+        ) : (
+          <>
+            {current.flag} {current.label}
+            <span className="language-dropdown-icon">▾</span>
+          </>
+        )}
       </button>
       {open && (
-        <ul className="language-dropdown-menu" role="listbox" aria-activedescendant={current.code}>
+        <ul className="language-dropdown-menu">
           {languageOptions.map((option) => (
             <li
               key={option.code}
               className={`language-dropdown-item ${option.code === current.code ? 'active' : ''}`}
-              role="option"
-              aria-selected={option.code === current.code}
               onClick={() => handleLanguagePick(option.code)}
             >
-              {option.flag} {option.label}
+              {compact ? option.code.toUpperCase() : `${option.flag} ${option.label}`}
             </li>
           ))}
         </ul>
@@ -66,3 +69,5 @@ export default function LanguageSwitcher() {
     </div>
   );
 }
+
+export default LanguageSwitcher;

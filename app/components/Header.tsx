@@ -24,13 +24,16 @@ const Header = () => {
     <header id="header" className={scrolled ? "scrolled" : ""}>
       <nav className="nav container">
         <Link href="/" className="nav__logo">&lt;IA /&gt;</Link>
-        <button
-          className={`nav__toggle ${menuOpen ? "active" : ""}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle navigation"
-        >
-          <span></span><span></span><span></span>
-        </button>
+        <div className="nav__actions">
+          <LanguageSwitcher compact />
+          <button
+            className={`nav__toggle ${menuOpen ? "active" : ""}`}
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle navigation"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
         <ul className={`nav__menu ${menuOpen ? "open" : ""}`}>
           {siteConfig.navLinks.map((link) => (
             <li key={link.href}>
@@ -43,7 +46,7 @@ const Header = () => {
               </Link>
             </li>
           ))}
-          <li>
+          <li className="nav__menu-lang">
             <LanguageSwitcher />
           </li>
           <li>

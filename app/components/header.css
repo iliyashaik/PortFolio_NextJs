@@ -117,8 +117,19 @@
   display: block;
 }
 
+/* Nav actions (compact lang switcher + hamburger) — mobile only */
+.nav__actions {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 /* HEADER RESPONSIVE */
 @media (max-width: 640px) {
+  .nav__actions {
+    display: flex;
+  }
+
   .nav__menu {
     position: fixed;
     top: var(--header-height);
@@ -154,6 +165,11 @@
 
   .nav__toggle.active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  /* Hide full switcher inside mobile menu */
+  .nav__menu-lang {
+    display: none;
   }
 }
 /* Language Switcher */
@@ -238,4 +254,32 @@
 .language-dropdown-item.active {
   background: var(--accent-glow);
   color: var(--accent);
+}
+
+/* Compact language switcher (mobile) */
+.language-dropdown--compact .language-dropdown-button {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+
+.language-dropdown--compact .language-code {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.language-dropdown--compact .language-dropdown-menu {
+  min-width: auto;
+  right: 0;
+  left: auto;
+  text-align: center;
+}
+
+.language-dropdown--compact .language-dropdown-item {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.4rem 0.75rem;
 }
