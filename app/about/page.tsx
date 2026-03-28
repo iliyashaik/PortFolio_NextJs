@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import AboutContent from "./AboutContent";
-import "./about.css";
+import "./about.scss";
 
 export const metadata: Metadata = {
   title: "About",

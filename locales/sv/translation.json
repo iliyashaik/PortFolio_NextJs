@@ -15,16 +15,16 @@
     "getInTouch": "Kontakta mig"
   },
   "about": {
-    "title": "Get to know me",
-    "subtitle": "About my background and experience",
-    "paragraph1": "I'm a <strong>Full-Stack Developer</strong> with <strong>7+ years</strong> of experience delivering scalable, production-grade web applications across the <strong>JavaScript</strong> and <strong>TypeScript</strong> ecosystem. My expertise spans <strong>React</strong>, <strong>Angular</strong>, <strong>Next.js</strong>, <strong>Node.js</strong>, and <strong>Express</strong>, with a strong focus on performance, scalability, and clean architecture.",
-    "paragraph2": "I have a growing focus on <strong>AI-driven application development</strong>, integrating intelligent features such as automation, data insights, and smart user interactions using modern <strong>AI APIs</strong> and <strong>cloud services</strong>. I'm particularly interested in building systems that combine traditional web engineering with AI capabilities to create more adaptive and efficient user experiences.",
-    "paragraph3": "I bring strong experience in <strong>GCP</strong>, <strong>SQL/NoSQL databases</strong>, and <strong>analytics integration</strong>, enabling me to design data-driven systems end-to-end. I ensure high-quality delivery through <strong>Cypress</strong>-based test automation, proactive monitoring with <strong>Sentry</strong>, and <strong>CI/CD pipelines</strong> using <strong>GitHub Actions</strong>.",
-    "paragraph4": "I take ownership of <strong>frontend architecture</strong>, from crafting pixel-perfect interfaces to contributing actively to product decisions, and collaborate closely with cross-functional teams to align technical solutions with business goals.",
+    "title": "Lär känna mig",
+    "subtitle": "Om bakgrund och erfarenhet",
+    "paragraph1": "Jag är en <strong>Full-Stack-utvecklare</strong> med över <strong>7 års</strong> erfarenhet av att leverera skalbara, produktionsfärdiga webbapplikationer i <strong>JavaScript</strong> och <strong>TypeScript</strong> ekosystemen. Min expertis omfattar <strong>React</strong>, <strong>Angular</strong>, <strong>Next.js</strong>, <strong>Node.js</strong> och <strong>Express</strong> med stark fokus på prestanda, skalbarhet och ren arkitektur.",
+    "paragraph2": "Jag har ett växande fokus på <strong>AI-drivna applikationsutveckling</strong>, integrerar intelligenta funktioner som automatisering, dataanalys och smarta användarinteraktioner med moderna <strong>AI-API:er</strong> och <strong>molntjänster</strong>. Jag är särskilt intresserad av att bygga system som kombinerar traditionell webbteknik med AI-kapabiliteter för att skapa mer adaptiva och effektiva användarupplevelser.",
+    "paragraph3": "Jag har stark erfarenhet av <strong>GCP</strong>, <strong>SQL/NoSQL</strong>-databaser och <strong>analysintegration</strong>, vilket gör att jag kan designa datadrivna system från slut till slut. Jag säkerställer hög leveranskvalitet genom <strong>Cypress-baserad testautomatisering</strong>, proaktiv övervakning med <strong>Sentry</strong> och <strong>CI/CD-pipelines</strong> med <strong>GitHub Actions</strong>.",
+    "paragraph4": "Jag tar ansvar för <strong>frontend-arkitektur</strong>, från att skapa pixelperfekta gränssnitt till att aktivt bidra till produktbeslut och samarbeta nära tvärfunktionella team för att anpassa tekniska lösningar med affärsmål.",
     "stats": {
-      "yearsExperience": "Years Experience",
-      "projectsDelivered": "Projects Delivered",
-      "technologies": "Technologies"
+      "yearsExperience": "Års erfarenhet",
+      "projectsDelivered": "Projekt levererade",
+      "technologies": "Tekniker"
     }
   },
   "skills": {

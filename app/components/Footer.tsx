@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { siteConfig } from "../config";
 import { SocialIcon } from "./Icons";
-import "./footer.css";
+import "./footer.scss";
 
 const Footer = () => {
   return (

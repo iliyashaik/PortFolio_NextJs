@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import ScrollReveal from "../components/ScrollReveal";
 import { GitHubIcon, FolderIcon, ExternalLinkIcon } from "../components/Icons";
-import "./projects.css";
+import "./projects.scss";
 
 export const metadata: Metadata = {
   title: "Projects",

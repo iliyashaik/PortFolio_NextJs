@@ -2,7 +2,7 @@
 
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from "../components/ScrollReveal";
-import "./skills.css";
+import "./skills.scss";
 
 export default function SkillsPage() {
   const { t } = useTranslation();

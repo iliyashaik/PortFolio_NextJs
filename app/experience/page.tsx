@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import ScrollReveal from "../components/ScrollReveal";
-import "./experience.css";
+import "./experience.scss";
 
 export const metadata: Metadata = {
   title: "Experience",

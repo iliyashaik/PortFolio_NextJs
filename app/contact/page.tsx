@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import ContactContent from "./contactContent";
-import "./contact.css";
+import "./contact.scss";
 
 export const metadata: Metadata = {
   title: "Contact",

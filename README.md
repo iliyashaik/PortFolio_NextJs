@@ -25,23 +25,23 @@ A modern, responsive personal portfolio website built with Next.js, React, and T
 app/
 ├── layout.tsx          # Root layout
 ├── page.tsx           # Home page
-├── globals.css        # Global styles
-├── home.css           # Home page styles
+├── globals.scss        # Global styles
+├── home.scss           # Home page styles
 ├── about/
 │   ├── page.tsx       # About page
-│   └── about.css      # About page styles
+│   └── about.scss      # About page styles
 ├── contact/
 │   ├── page.tsx       # Contact page
-│   └── contact.css    # Contact page styles
+│   └── contact.scss    # Contact page styles
 ├── experience/
 │   ├── page.tsx       # Experience page
-│   └── experience.css # Experience page styles
+│   └── experience.scss # Experience page styles
 ├── projects/
 │   ├── page.tsx       # Projects page
-│   └── projects.css   # Projects page styles
+│   └── projects.scss   # Projects page styles
 ├── skills/
 │   ├── page.tsx       # Skills page
-│   └── skills.css     # Skills page styles
+│   └── skills.scss     # Skills page styles
 └── components/
     ├── Header.tsx     # Navigation header
     ├── Footer.tsx     # Site footer
