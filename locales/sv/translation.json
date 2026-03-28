@@ -15,16 +15,16 @@
     "getInTouch": "Kontakta mig"
   },
   "about": {
-    "title": "Lär känna mig",
-    "subtitle": "Om bakgrund och erfarenhet",
-    "paragraph1": "Jag är en Full-Stack-utvecklare med över 7 års erfarenhet av att leverera skalbara, produktionsfärdiga webbapplikationer i JavaScript och TypeScript ekosystemen. Min expertis omfattar React, Angular, Next.js, Node.js och Express med stark fokus på prestanda, skalbarhet och ren arkitektur.",
-    "paragraph2": "Jag har ett växande fokus på AI-drivna applikationsutveckling, integrerar intelligenta funktioner som automatisering, dataanalys och smarta användarinteraktioner med moderna AI-API:er och molntjänster. Jag är särskilt intresserad av att bygga system som kombinerar traditionell webbteknik med AI-kapabiliteter för att skapa mer adaptiva och effektiva användarupplevelser.",
-    "paragraph3": "Jag har stark erfarenhet av GCP, SQL/NoSQL-databaser och analysintegration, vilket gör att jag kan designa datadrivna system från slut till slut. Jag säkerställer hög leveranskvalitet genom Cypress-baserad testautomatisering, proaktiv övervakning med Sentry och CI/CD-pipelines med GitHub Actions.",
-    "paragraph4": "Jag tar ansvar för frontend-arkitektur, från att skapa pixelperfekta gränssnitt till att aktivt bidra till produktbeslut och samarbeta nära tvärfunktionella team för att anpassa tekniska lösningar med affärsmål.",
+    "title": "Get to know me",
+    "subtitle": "About my background and experience",
+    "paragraph1": "I'm a <strong>Full-Stack Developer</strong> with <strong>7+ years</strong> of experience delivering scalable, production-grade web applications across the <strong>JavaScript</strong> and <strong>TypeScript</strong> ecosystem. My expertise spans <strong>React</strong>, <strong>Angular</strong>, <strong>Next.js</strong>, <strong>Node.js</strong>, and <strong>Express</strong>, with a strong focus on performance, scalability, and clean architecture.",
+    "paragraph2": "I have a growing focus on <strong>AI-driven application development</strong>, integrating intelligent features such as automation, data insights, and smart user interactions using modern <strong>AI APIs</strong> and <strong>cloud services</strong>. I'm particularly interested in building systems that combine traditional web engineering with AI capabilities to create more adaptive and efficient user experiences.",
+    "paragraph3": "I bring strong experience in <strong>GCP</strong>, <strong>SQL/NoSQL databases</strong>, and <strong>analytics integration</strong>, enabling me to design data-driven systems end-to-end. I ensure high-quality delivery through <strong>Cypress</strong>-based test automation, proactive monitoring with <strong>Sentry</strong>, and <strong>CI/CD pipelines</strong> using <strong>GitHub Actions</strong>.",
+    "paragraph4": "I take ownership of <strong>frontend architecture</strong>, from crafting pixel-perfect interfaces to contributing actively to product decisions, and collaborate closely with cross-functional teams to align technical solutions with business goals.",
     "stats": {
-      "yearsExperience": "Års erfarenhet",
-      "projectsDelivered": "Projekt levererade",
-      "technologies": "Tekniker"
+      "yearsExperience": "Years Experience",
+      "projectsDelivered": "Projects Delivered",
+      "technologies": "Technologies"
     }
   },
   "skills": {
@@ -62,6 +62,31 @@
       "ajax": "AJAX",
       "json": "JSON",
       "i18n": "i18n"
+    }
+  },
+  "contact": {
+    "title": "Kontakta mig",
+    "subtitle": "Låt oss arbeta tillsammans",
+    "description": "Jag är just nu öppen för nya möjligheter och intressanta projekt. Oavsett om du har en fråga, ett förslag eller bara vill säga hej är min inkorg alltid öppen.",
+    "location": "Helsingborg, Sverige",
+    "form": {
+      "nameLabel": "Namn",
+      "namePlaceholder": "Ditt namn",
+      "emailLabel": "E-post",
+      "emailPlaceholder": "din@email.com",
+      "messageLabel": "Meddelande",
+      "messagePlaceholder": "Ditt meddelande...",
+      "submit": "Skicka meddelande",
+      "subject": "Portföljkontakt: {{name}}",
+      "status": {
+        "sending": "Skickar...",
+        "sent": "Skickat!",
+        "error": "Misslyckades - försök igen"
+      },
+      "validation": {
+        "required": "Fyll i alla fält.",
+        "email": "Ange en giltig e-postadress."
+      }
     }
   },
   "footer": {

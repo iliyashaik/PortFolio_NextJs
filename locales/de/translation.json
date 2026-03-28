@@ -11,16 +11,16 @@
     "name": "Iliyaz Ahmed",
     "titlePrefix": "Ich baue",
     "description": "Full-Stack-Entwickler, spezialisiert auf moderne JavaScript-Ökosysteme, cloud-native Architektur auf GCP und KI-basierte lösungen mit echtem Geschäftsnutzen.",
-    "viewWork": "Meine Arbeit ansehen",
+    "viewWork": "Meine arbeit ansehen",
     "getInTouch": "Kontakt aufnehmen"
   },
   "about": {
     "title": "Lerne mich kennen",
     "subtitle": "Über meinen Hintergrund und meine Erfahrung",
-    "paragraph1": "Ich bin ein Full-Stack-Entwickler mit über 7 Jahren Erfahrung in der Bereitstellung skalierbarer, produktionsreifer Webanwendungen im JavaScript- und TypeScript-Ökosystem. Meine Expertise umfasst React, Angular, Next.js, Node.js und Express mit starkem Fokus auf Leistung, Skalierbarkeit und saubere Architektur.",
-    "paragraph2": "Ich konzentriere mich zunehmend auf KI-getriebene Anwendungsentwicklung und integriere intelligente Funktionen wie Automatisierung, Datenanalyse und smarte Benutzerinteraktionen mithilfe moderner kI-APIs und Cloud-Dienste. Besonders interessiert mich der Aufbau von Systemen, die traditionelle Webtechnik mit AI-Funktionen kombinieren, um adaptivere und effizientere Benutzererlebnisse zu schaffen.",
-    "paragraph3": "Ich verfüge über umfassende Erfahrung in GCP, SQL/NoSQL-Datenbanken und Analytics-Integration, was es mir ermöglicht, datengesteuerte Systeme von End-to-End zu entwerfen. Ich stelle hohe Qualität durch Cypress-basierte Testautomatisierung, proaktive Überwachung mit Sentry und CI/CD-Pipelines mit GitHub Actions sicher.",
-    "paragraph4": "Ich übernehme Verantwortung für Frontend-Architektur, von pixelgenauen Oberflächen bis hin zur aktiven Mitgestaltung von Produktentscheidungen, und arbeite eng mit funktionsübergreifenden Teams zusammen, um technische Lösungen auf Geschäftszwecke abzustimmen.",
+    "paragraph1": "Ich bin ein <strong>Full-Stack-Entwickler</strong> mit über <strong>7 Jahren</strong> Erfahrung in der Bereitstellung skalierbarer, produktionsreifer Webanwendungen im <strong>JavaScript</strong>- und <strong>TypeScript</strong>-Ökosystem. Meine Expertise umfasst <strong>React</strong>, <strong>Angular</strong>, <strong>Next.js</strong>, <strong>Node.js</strong> und <strong>Express</strong> mit starkem Fokus auf Leistung, Skalierbarkeit und saubere Architektur.",
+    "paragraph2": "Ich konzentriere mich zunehmend auf <strong>KI-getriebene Anwendungsentwicklung</strong> und integriere intelligente Funktionen wie Automatisierung, Datenanalyse und smarte Benutzerinteraktionen mithilfe moderner <strong>KI-APIs</strong> und <strong>Cloud-Dienste</strong>. Besonders interessiert mich der Aufbau von Systemen, die traditionelle Webtechnik mit AI-Funktionen kombinieren, um adaptivere und effizientere Benutzererlebnisse zu schaffen.",
+    "paragraph3": "Ich verfüge über umfassende Erfahrung in <strong>GCP</strong>, <strong>SQL/NoSQL-Datenbanken</strong> und <strong>Analytics-Integration</strong>, was es mir ermöglicht, datengesteuerte Systeme von End-to-End zu entwerfen. Ich stelle hohe Qualität durch <strong>Cypress</strong>-basierte Testautomatisierung, proaktive Überwachung mit <strong>Sentry</strong> und <strong>CI/CD-Pipelines</strong> mit <strong>GitHub Actions</strong> sicher.",
+    "paragraph4": "Ich übernehme Verantwortung für <strong>Frontend-Architektur</strong>, von pixelgenauen Oberflächen bis hin zur aktiven Mitgestaltung von Produktentscheidungen, und arbeite eng mit funktionsübergreifenden Teams zusammen, um technische Lösungen auf Geschäftszwecke abzustimmen.",
     "stats": {
       "yearsExperience": "Jahre Erfahrung",
       "projectsDelivered": "Projekte geliefert",
@@ -62,6 +62,31 @@
       "ajax": "AJAX",
       "json": "JSON",
       "i18n": "i18n"
+    }
+  },
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Lass uns zusammenarbeiten",
+    "description": "Ich bin derzeit offen für neue Möglichkeiten und interessante Projekte. Ob du eine Frage, einen Vorschlag oder einfach nur ein Hallo hast, mein Posteingang ist immer offen.",
+    "location": "Helsingborg, Schweden",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Dein Name",
+      "emailLabel": "E-Mail",
+      "emailPlaceholder": "deine@email.com",
+      "messageLabel": "Nachricht",
+      "messagePlaceholder": "Deine Nachricht...",
+      "submit": "Nachricht senden",
+      "subject": "Portfolio-Kontakt: {{name}}",
+      "status": {
+        "sending": "Wird gesendet...",
+        "sent": "Gesendet!",
+        "error": "Fehlgeschlagen - erneut versuchen"
+      },
+      "validation": {
+        "required": "Bitte fülle alle Felder aus.",
+        "email": "Bitte gib eine gültige E-Mail-Adresse ein."
+      }
     }
   },
   "footer": {
