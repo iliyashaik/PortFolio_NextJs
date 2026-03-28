@@ -19,7 +19,7 @@ const projects = [
     title: "myCAMS Online — Mutual Fund Investments",
     desc: "Built a single page web application for mutual fund investors to manage investments across various bank funds. Designed responsive GUI using Angular Material, implemented SMS-based app download links, and developed various transaction pages.",
     tags: ["Angular", "TypeScript", "Angular Material", "MySQL"],
-    url: "https://newmycams.camsonline.com/",
+    url: "https://mycams.camsonline.com/",
   },
   {
     title: "CAMS FinServ — Account Aggregator",
@@ -53,11 +53,11 @@ const ProjectsPage = () => {
               <article className="project-card" key={project.title}>
                 <h3 className="project-card__title">{project.title}</h3>
                 <p className="project-card__desc">{project.desc}</p>
-                {project.url && (
+                {/* {project.url && ( // I Don't want to show now
                   <a href={project.url} target="_blank" rel="noopener noreferrer" className="project-card__url">
                     <ExternalLinkIcon /> {project.url.replace(/^https?:\/\//, "")}
                   </a>
-                )}
+                )} */}
                 <div className="project-card__tags">
                   {project.tags.map((tag) => (
                     <span key={tag}>{tag}</span>
