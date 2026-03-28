@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import { siteConfig } from "../config";
 import LanguageSwitcher from "./LanguageSwitcher";
-import "./header.css";
+import "./header.scss";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);

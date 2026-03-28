@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useTranslation } from 'react-i18next';
 import TypingEffect from "./components/TypingEffect";
 import { GitHubIcon, LinkedInIcon } from "./components/Icons";
-import "./home.css";
+import "./home.scss";
 
 type Token = { type: string; text: string } | string;
 
