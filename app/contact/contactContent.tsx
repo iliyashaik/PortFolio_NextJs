@@ -22,7 +22,7 @@ const ContactContent = () => {
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                     <polyline points="22,6 12,13 2,6" />
                   </svg>
-                  <a href="mailto:iliyas.shaik3@gmail.com">iliyas.shaik3@gmail.com</a>
+                  <a href={`mailto:${process.env.NEXT_PUBLIC_CONTACT_MAIL}`}>{process.env.NEXT_PUBLIC_CONTACT_MAIL}</a>
                 </div>
                 <div className="contact__detail">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
