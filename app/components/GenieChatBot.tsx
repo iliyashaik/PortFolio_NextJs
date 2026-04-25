@@ -65,37 +65,35 @@ const GenieChatBot = () => {
         setInput('');
         setIsLoading(true);
 
-        try {
-            const response = await fetch('/api/chat', {
+           return await fetch('/api/chatBot', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({ message }),
+            }).then(async (response) => {
+                if (!response.ok) {
+                    const failure = await response.json().catch(() => ({}));
+                    const errorMessage =
+                        typeof failure.error === 'string'
+                            ? failure.error
+                            : 'Could not reach the assistant. Please try again.';
+
+                    setMessages((prev) => [...prev, { role: 'assistant', text: errorMessage }]);
+                    return;
+                }
+
+                const data = (await response.json()) as { reply?: string };
+                const reply = data.reply?.trim() || 'Im not trained to have an answer right now. Please try something else 🤔';
+                setMessages((prev) => [...prev, { role: 'assistant', text: reply }]);
+            }).catch(() => {
+                setMessages((prev) => [
+                    ...prev,
+                    { role: 'assistant', text: 'Network issue detected. Please retry in a moment.' },
+                ]);
+            }).finally(() => {
+                setIsLoading(false);
             });
-
-            if (!response.ok) {
-                const failure = await response.json().catch(() => ({}));
-                const errorMessage =
-                    typeof failure.error === 'string'
-                        ? failure.error
-                        : 'Could not reach the assistant. Please try again.';
-
-                setMessages((prev) => [...prev, { role: 'assistant', text: errorMessage }]);
-                return;
-            }
-
-            const data = (await response.json()) as { reply?: string };
-            const reply = data.reply?.trim() || 'Im not trained to have an answer right now. Please try something else 🤔';
-            setMessages((prev) => [...prev, { role: 'assistant', text: reply }]);
-        } catch {
-            setMessages((prev) => [
-                ...prev,
-                { role: 'assistant', text: 'Network issue detected. Please retry in a moment.' },
-            ]);
-        } finally {
-            setIsLoading(false);
-        }
     };
 
     return (
