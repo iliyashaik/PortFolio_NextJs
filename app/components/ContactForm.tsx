@@ -85,7 +85,7 @@ const ContactForm = () => {
         const form = formRef.current;
         if (!form) return;
 
-        void submitForm(form);
+        submitForm(form);
       }}
       noValidate
     >
