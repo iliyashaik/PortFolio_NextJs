@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Fira_Code } from "next/font/google";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import GenieChatBot from "./components//GenieChatBot";
 import Providers from "./providers";
 import "./globals.scss";
 
@@ -37,6 +38,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           <Header />
           {children}
           <Footer />
+          <GenieChatBot />
         </Providers>
       </body>
     </html>
