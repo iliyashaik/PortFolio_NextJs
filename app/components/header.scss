@@ -43,7 +43,8 @@
   gap: 2rem;
 }
 
-.nav__link {
+.nav__link,
+.nav__pdf-button {
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--text-secondary);
@@ -51,7 +52,8 @@
   position: relative;
 }
 
-.nav__link::after {
+.nav__link::after,
+.nav__pdf-button::after {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -63,12 +65,14 @@
 }
 
 .nav__link:hover,
-.nav__link.active {
+.nav__link.active,
+.nav__pdf-button:hover {
   color: var(--text-primary);
 }
 
 .nav__link:hover::after,
-.nav__link.active::after {
+.nav__link.active::after,
+.nav__pdf-button:hover::after {
   width: 100%;
 }
 
