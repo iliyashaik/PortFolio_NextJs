@@ -44,6 +44,17 @@ const Header = () => {
               >
                 {t(`nav.${link.key}`)}
               </Link>
+              {link.key === "contact" && (
+                <a
+                  href="/Iliyaz.pdf"
+                  className="nav__pdf-button"
+                  target="_blank"
+                  download
+                  rel="noopener noreferrer"
+                >
+                  Resume
+                </a>
+              )}
             </li>
           ))}
           <li className="nav__menu-lang">
