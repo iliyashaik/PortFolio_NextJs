@@ -37,6 +37,12 @@
   gap: 2rem;
 }
 
+.nav__menu li {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
 .nav__link {
   font-size: 0.9rem;
   font-weight: 500;
