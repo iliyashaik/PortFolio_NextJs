@@ -80,7 +80,7 @@ export const GET = async (request: NextRequest) => {
     const fallbackLocation = await getLocationFromIp(visitorInfo.ip);
 
     if (fallbackLocation) {
-      visitorInfo.ip = visitorInfo.ip === 'unknown' || visitorInfo.ip === 'localhost' ? fallbackLocation.ip : visitorInfo.ip;
+      visitorInfo.ip = fallbackLocation.ip;
       visitorInfo.country = isMissing(visitorInfo.country) ? fallbackLocation.country : visitorInfo.country;
       visitorInfo.region = isMissing(visitorInfo.region) ? fallbackLocation.region : visitorInfo.region;
       visitorInfo.city = isMissing(visitorInfo.city) ? fallbackLocation.city : visitorInfo.city;
