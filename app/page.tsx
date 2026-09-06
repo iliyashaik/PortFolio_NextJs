@@ -90,6 +90,7 @@ const Home = () => {
             </svg>
           </Link>
         </div>
+      <VisitTracker />
       </section>
   );
 }
