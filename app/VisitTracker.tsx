@@ -16,7 +16,7 @@ const VisitTracker = () => {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                access_key: process.env.NEXT_VISITING_EMAIL,
+                access_key: process.env.NEXT_PUBLIC_VISITING_EMAIL,
                 name: "Portfolio Visitor Alert",
                 email: process.env.NEXT_PUBLIC_CONTACT_MAIL,
                 subject: "New portfolio visit",
