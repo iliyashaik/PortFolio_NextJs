@@ -24,8 +24,10 @@ const VisitTracker = () => {
             }),
         }).then(response => {
             if (!response.ok) {
-                console.error('Failed to send portfolio visit alert');
+                console.error('Failed to send portfolio visit alert', response.statusText);
             }
+        }).catch(error => {
+            console.error('Failed to send visit alert', error);
         });
     }, []);
 
