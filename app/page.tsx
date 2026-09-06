@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import TypingEffect from "./components/TypingEffect";
 import { GitHubIcon, LinkedInIcon } from "./components/Icons";
 import "./home.scss";
+import VisitTracker from "./VisitTracker";
 
 type Token = { type: string; text: string } | string;
 
