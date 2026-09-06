@@ -116,7 +116,7 @@ const sendVisitAlertEmail = async (request: NextRequest) => {
   return { ok: true };
 };
 
-const middleware = async (request: NextRequest) => {
+const proxy = async (request: NextRequest) => {
   if (!shouldTrack(request)) {
     return NextResponse.next();
   }
@@ -134,4 +134,4 @@ export const config = {
   matcher: ['/((?!_next/static|_next/image|favicon.ico).*)'],
 };
 
-export { middleware };
+export { proxy };
