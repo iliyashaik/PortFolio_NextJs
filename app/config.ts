@@ -3,7 +3,7 @@ export const siteConfig = {
     { href: "/about", key: "about" },
     { href: "/skills", key: "skills" },
     { href: "/experience", key: "experience" },
-    { href: "/projects", key: "projects" },
+    //{ href: "/projects", key: "projects" },
     { href: "/contact", key: "contact" },
   ],
   socials: [
