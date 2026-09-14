@@ -4,7 +4,7 @@ import "./about.scss";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Learn more about Iliyaz Ahmed — Full-Stack JavaScript/TypeScript Developer.",
+  description: "Learn more about Iliyaz Ahmed — Senior Front-End Engineer.",
 };
 
 const AboutPage = () => {
