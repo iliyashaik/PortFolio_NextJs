@@ -18,7 +18,7 @@ const codeLines = [
   ["}"],
   [{ type: "keyword", text: "const" }, " ", { type: "var", text: "iliyaz" }, ": ", { type: "type", text: "Developer" }, " = {"],
   ["  ", { type: "prop", text: "name" }, ": ", { type: "value", text: '"Iliyaz Ahmed"' }, ","],
-  ["  ", { type: "prop", text: "role" }, ": ", { type: "value", text: '"Full-Stack Developer"' }, ","],
+  ["  ", { type: "prop", text: "role" }, ": ", { type: "value", text: '"Senior Front-End Engineer"' }, ","],
   ["  ", { type: "prop", text: "skills" }, ": ["],
   ["    ", { type: "value", text: '"React"' }, ", ", { type: "value", text: '"Angular"' }, ","],
   ["    ", { type: "value", text: '"Next Js"' }, ", ", { type: "value", text: '"Node Js"' }, ","],
