@@ -20,11 +20,11 @@ const firaCode = Fira_Code({
 
 export const metadata: Metadata = {
   title: {
-    default: "Iliyaz Ahmed — Full-Stack Developer",
+    default: "Iliyaz Ahmed — Senior Front-End Engineer",
     template: "%s — Iliyaz Ahmed",
   },
   description:
-    "Portfolio of Iliyaz Ahmed — Full-Stack JavaScript/TypeScript Developer",
+    "Portfolio of Iliyaz Ahmed — Senior Front-End Engineer JavaScript/TypeScript, scalable web applications, and modern UI architecture.",
   icons: {
     icon: "data:image/svg+xml,<svg viewBox='0 0 100 100'><text y='.9em' font-size='90'>🙃</text></svg>",
   },
